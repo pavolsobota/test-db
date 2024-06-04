@@ -1,0 +1,12 @@
+curl -X POST http://127.0.0.1:5000/export \
+    -H "Content-Type: application/json" \
+    -d '{
+        "username": "sobotapavol9",
+        "password": "6ttKmK5zbuwdLWxu",
+        "cluster_url": "testdatabase.gblbwaz.mongodb.net",
+        "database_name": "movies-api",
+        "collection_name": "movies",
+        "output_file": "output.csv",
+        "fields": ["_id", "imdbId", "title"],
+        "array_fields": ["genres"]
+    }'
